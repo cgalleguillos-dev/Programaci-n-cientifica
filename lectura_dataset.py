@@ -1,7 +1,6 @@
 # Nombre del archivo a leer
 from show_resources import get_resource_info
 
-
 nombre_archivo = 'dataset.txt'  # Cambia 'ruta_del_archivo.txt' por la ruta real del archivo
 
 # Leer el archivo y omitir las primeras 3 líneas
@@ -25,6 +24,8 @@ def save_data_2(lineas):
     ids = [linea.split()[0] for linea in lineas]
     frames = [linea.split()[1] for linea in lineas]
     return ids, frames
+def saludar():
+    print("Hola mundo")
 
 # Medir recursos para la función save_data_1
 print("Medición de recursos para la función save_data_1")
